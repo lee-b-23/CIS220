@@ -1,0 +1,27 @@
+12345678901234567890123456789012345678901234567890123456789012345678901234567-90
+Enigma Machine Project                                      Author:  Lee Brown
+GearScreenPosition                                            Date: 10/22/2020
+
+
+                                      Enigma Machine
+                                 Gear Configuration Menu
+
+
+
+                      ______________________________________________
+                     |POSITION 1        POSITION 2        POSITION 3|
+                     |                                              |
+                     | <gear 1>          <gear 2>          <gear 3> |
+                     |                                              |
+                     |               Available Gears                |
+                     |                   <gears>                    |
+                     |______________________________________________|
+					 
+
+                    Follow the prompts below to change gear positions.
+
+
+
+
+
+Type # of gear to enter into position <position> or type 'e' to exit >>> 

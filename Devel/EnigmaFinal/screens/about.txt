@@ -1,0 +1,24 @@
+12345678901234567890123456789012345678901234567890123456789012345678901234567-90
+Enigma Machine Project                                      Author:  Lee Brown
+AboutScreen                                                   Date: 10/22/2020
+
+
+                                           Enigma Machine
+                                               About
+
+
+The enigma machine is meant to encode messages.  The three gears represent
+the set of characters that can be put into the machine.  If you rotate a gear,
+the output for a given letter will be changed.  The plugboard is used to pair
+scramble letters by swapping paired letters as they appear in the message.
+
+The program was made by Lee Brown as a final project for his Object-Oriented
+Programming course at Manchester Community College.  If you would like to
+contact Lee, you can email him at lbrown565@students.ccsnh.edu.
+
+
+
+
+
+
+Press any key to continue >>> 

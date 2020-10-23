@@ -1,0 +1,24 @@
+12345678901234567890123456789012345678901234567890123456789012345678901234567-90
+Enigma Machine Project                                      Author:  Lee Brown
+PlugboardConfigStart                                          Date: 10/22/2020
+
+
+                                          Enigma Machine
+                                       Plugboard Config Menu
+
+                          Pair sets of letters to scramble with each other.
+                                       Pair  1:  <pair 1>
+                                       Pair  2:  <pair 2>
+                                       Pair  3:  <pair 3>
+                                       Pair  4:  <pair 4>
+                                       Pair  5:  <pair 5>
+                                       Pair  6:  <pair 6>
+                                       Pair  7:  <pair 7>
+                                       Pair  8:  <pair 8>
+                                       Pair  9:  <pair 9>
+                                       Pair 10:  <pair 10>
+                                       Pair 11:  <pair 11>
+                                       Pair 12:  <pair 12>
+                                       Pair 13:  <pair 13>
+Available Letters:  <available letters>
+Type pair number to change >>> 

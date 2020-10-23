@@ -1,0 +1,24 @@
+12345678901234567890123456789012345678901234567890123456789012345678901234567-90
+Enigma Machine Project                                      Author:  Lee Brown
+MainMenu                                                      Date: 10/22/2020
+
+
+                                  Enigma Machine
+                                    Main Menu
+
+
+
+                              Encode message       (1)
+                              Configure Gears      (2)
+                              Rotate Gears         (3)
+                              Configure Plugboard  (4)
+                              About Enigma Machine (5)
+                              Exit                 (6)
+
+
+
+
+
+
+
+Type item number here >>> 

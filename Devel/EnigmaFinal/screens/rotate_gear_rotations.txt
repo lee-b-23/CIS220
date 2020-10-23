@@ -1,0 +1,24 @@
+12345678901234567890123456789012345678901234567890123456789012345678901234567-90
+Enigma Machine Project                                      Author:  Lee Brown
+RotateGears                                                   Date: 10/22/2020
+
+
+                                  Enigma Machine
+                                Rotate Gears Menu
+
+
+
+
+
+
+           |     Choose how many times to rotate gear at position <position>
+           |     by typing the number below.  Clearly, these are not full
+           .     rotations.  Instead, they are rotating the gear by one 
+                 interval.
+
+
+
+
+
+
+Type # of rotations here >>> 

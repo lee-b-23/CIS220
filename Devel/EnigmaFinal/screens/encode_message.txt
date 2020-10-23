@@ -1,0 +1,24 @@
+12345678901234567890123456789012345678901234567890123456789012345678901234567-90
+Enigma Machine Project                                      Author:  Lee Brown
+EncodeMessageScreen                                           Date: 10/22/2020
+
+
+                                    Enigma Machine
+                                  Encode Message Menu
+
+
+                         vvvvTYPE MESSAGE AFTER PROMPT BELOWvvvv
+						  
+                                        / \
+                                       / | \
+                                      /__*__\
+                           WARNING:  Message data is not saved.
+                           Make sure to copy and paste the
+                           result before exiting the program.
+
+
+
+
+
+
+Type message here >>> 
