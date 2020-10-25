@@ -12,15 +12,19 @@ import os
 import FileToList as f
 
 def show_screen(screen):
-    os.system('cd D:\CIS220\Devel\EnigmaFinal')
+    #os.system('cd D:\CIS210\Devel\FinalProject')
     os.system('cls')
     screen_file = ("screens\\" + screen + '.txt')
     screen_data = f.read_to_list(screen_file)
     count = 0
     for x in screen_data:
         if count != 0:
-            input(x)
+            if count == 23:
+                value = input(x)
+            else:
+                print(x)
         count = count + 1
+    return value
     
 
 #show_screen('encode_message')

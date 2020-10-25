@@ -3,19 +3,19 @@ Enigma Machine Project                                      Author:  Lee Brown
 RotateGears                                                   Date: 10/22/2020
 
 
-                                  Enigma Machine
-                                Rotate Gears Menu
-
-
-
-                 Position 1         Position 2         Position 3
+                                 Enigma Machine
+                                     Header
 
 
 
 
-           |    Choose the position of the gear that you want to rotate.
-           |    The position number does not necessarily correspond to the 
-           .	gear number.
+
+
+
+
+
+
+
 
 
 

@@ -1,0 +1,24 @@
+12345678901234567890123456789012345678901234567890123456789012345678901234567-90
+Enigma Machine Project                                      Author:  Lee Brown
+DecryptMessageScreen                                          Date: 10/22/2020
+
+
+                                 Enigma Machine
+                             Decrypt Message Menu
+
+
+                      vvvvTYPE MESSAGE AFTER PROMPT BELOWvvvv
+						  
+                                        
+
+                                      / \
+                                     / | \
+                                    /__.__\
+                 Make sure that the message is properly formatted!
+
+
+
+
+
+
+Type message or text file location in ''s here >>> 

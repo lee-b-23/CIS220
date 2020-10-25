@@ -20,5 +20,5 @@ MainMenu                                                      Date: 10/22/2020
 
 
 
-
-Type item number here >>> 
+Incorrect Input!  Try again!
+Type ONLY the # of the option above >>> 

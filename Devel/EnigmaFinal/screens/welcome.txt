@@ -1,0 +1,24 @@
+12345678901234567890123456789012345678901234567890123456789012345678901234567-90
+Enigma Machine Project                                      Author:  Lee Brown
+RotateGears                                                   Date: 10/22/2020
+
+
+
+
+
+
+
+
+                   Welcome to the Enigma Machine Application!
+
+
+
+
+
+
+
+                  Please follow the instructions on/at the
+                 bottom of each page when using the machine.
+                 v v v v v v v v v v v v v v v v v v v v v v
+
+Press ENTER to continue >>> 
