@@ -9,7 +9,7 @@ RotateGears                                                   Date: 10/22/2020
 
 
 
-                   Welcome to the Enigma Machine Application!
+                  Welcome to the Enigma Machine Application!
 
 
 

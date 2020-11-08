@@ -7,7 +7,7 @@ EncryptMessageScreen                                          Date: 10/22/2020
                             Encode Message Menu
 
 
-                  vvvvTYPE MESSAGE AFTER PROMPT BELOWvvvv
+              vvvvTYPE FILE LOCATION AFTER PROMPT BELOWvvvv
 						  
                                         
 
@@ -21,4 +21,4 @@ EncryptMessageScreen                                          Date: 10/22/2020
 
 
 
-Type message or text file location in ''s here >>> 
+Type text file location here >>> 

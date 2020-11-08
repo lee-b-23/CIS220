@@ -3,8 +3,8 @@ Enigma Machine Project                                      Author:  Lee Brown
 AboutScreen                                                   Date: 10/22/2020
 
 
-                                 Enigma Machine
-                                     About
+                              Enigma Machine
+                                  About
 
 
 

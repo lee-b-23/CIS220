@@ -3,15 +3,15 @@ Enigma Machine Project                                      Author:  Lee Brown
 MainMenu                                                      Date: 10/22/2020
 
 
-                                 Enigma Machine
-                                   Main Menu
+                              Enigma Machine
+                                Main Menu
 
 
 
-                             Encrypt message       (1)
-                             Decrypt Message       (2)
-                             About Enigma Machine  (3)
-                             Exit                  (4)
+                        Encrypt message       (1)
+                        Decrypt Message       (2)
+                        About Enigma Machine  (3)
+                        Exit                  (4)
 
 
 

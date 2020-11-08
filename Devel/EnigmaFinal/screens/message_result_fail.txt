@@ -20,5 +20,5 @@ EncodedMessageScreen                                          Date: 10/22/2020
 
 
 
-
+           <<ERROR:  Incorrect input or file location.  Try again!>>
 Type file location ('C:\...') to save to and/or press enter to continue >>> 

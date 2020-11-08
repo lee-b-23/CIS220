@@ -9,6 +9,7 @@ Description:  This program will display a screen from a text document in a
               will take in the given screen as parameters.
 Sources:
  - https://stackoverflow.com/questions/18262293/how-to-open-every-file-in-a-folder
+ - https://stackoverflow.com/questions/4813061/non-alphanumeric-list-order-from-os-listdir
 """
 import os
 import FileToList as f
@@ -39,13 +40,16 @@ class AbstractScreen:
         pass
 
 class StaticInputScreen(AbstractScreen):
-    def show_screen(self, name):
+    def show_screen(self, name, replace_what = [], replace_with = []):
         os.system('cls')
         scr = self.get_screen(name)
 
         count = 0
         for x in scr:
             if count != 0:
+                if replace_with != []:
+                    for y in range(0, len(replace_with)):
+                        x = x.replace(replace_what[y], replace_with[y])
                 if count == 23:
                     value = input(x)
                 else:
@@ -57,7 +61,7 @@ class AnimatedScreen(AbstractScreen):
     def show_screen(self, folder_name):
         os.system('cls')
         names = os.listdir(self.dir + '\\' + folder_name)
-        #print(names)
+        names.sort()
         for name in names:
             os.system('cls')
             scr = self.get_screen(name, 'loading')
@@ -86,8 +90,8 @@ class ShowScreen:
             #raise "Incorrect screen type specified."
             pass
 
-value = ShowScreen('D:\\CIS220\\Devel\\EnigmaFinal\\screens', '.txt')
-value.show_screen('animated', '','loading')
+'''value = ShowScreen('D:\\CIS220\\Devel\\EnigmaFinal\\screens', '.txt')
+value.show_screen('animated', '','loading')'''
 
 
 '''screen = AnimatedScreen('D:\\CIS220\\Devel\\EnigmaFinal\\screens', '.txt')

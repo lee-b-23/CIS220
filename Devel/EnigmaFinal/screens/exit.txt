@@ -3,7 +3,7 @@ Enigma Machine Project                                      Author:  Lee Brown
 ExitScreen                                                    Date: 10/22/2020
 
 
-                                  Enigma Machine
+                              Enigma Machine
 
 
 
@@ -11,7 +11,7 @@ ExitScreen                                                    Date: 10/22/2020
 
 
 
-                  Thank you for using the enigma machine program.
+              Thank you for using the enigma machine program.
 
 
 
