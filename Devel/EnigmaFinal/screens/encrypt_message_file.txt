@@ -21,4 +21,4 @@ EncryptMessageScreen                                          Date: 10/22/2020
 
 
 
-Type text file location here >>> 
+Type text file location here or press 'e' to exit >>> 

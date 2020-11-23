@@ -2,7 +2,7 @@
 Name:  ShowScreen.py
 Author:  Lee Brown
 Created:  10/22/2020
-Last Updated:  11/01/2020
+Last Updated:  11/20/2020
 Purpose:  Shows a given screen for my Enigma Machine.
 Description:  This program will display a screen from a text document in a
               command window.  It will need to clear that window first, and it
@@ -81,11 +81,11 @@ class ShowScreen:
         self.static_scr = StaticInputScreen(directory, screen_extention)
         self.animated_scr = AnimatedScreen(directory, screen_extention)
     
-    def show_screen(self, scr_type, name = '', folder = ''):
+    def show_screen(self, scr_type, name = '', replace_what = [], replace_with = [], folder = ''):
         if scr_type == 'static':
-            self.static_scr.show_screen(name)
+            return self.static_scr.show_screen(name, replace_what, replace_with)
         elif scr_type == 'animated':
-            self.animated_scr.show_screen(folder)
+            return self.animated_scr.show_screen(folder)
         else:
             #raise "Incorrect screen type specified."
             pass

@@ -20,5 +20,5 @@ EncryptMessageScreen                                          Date: 10/22/2020
 
 
 
-
-Type message or press ENTER for a file >>> 
+                     Contains invalid characters!  Try again!
+Type message or press ENTER for a file>>> 

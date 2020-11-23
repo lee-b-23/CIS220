@@ -7,7 +7,7 @@ DecryptMessageScreen                                          Date: 10/22/2020
                            Decrypt Message Menu
 
 
-                  vvvvTYPE MESSAGE AFTER PROMPT BELOWvvvv
+              vvvvType file location after prompt below vvvv
 						  
                                         
 
@@ -20,5 +20,5 @@ DecryptMessageScreen                                          Date: 10/22/2020
 
 
 
-
-Type message or press ENTER for a file >>> 
+                <<Incorrect file location!  Try again!">>
+Type >exact< file location here or 'e' to exit >>> 

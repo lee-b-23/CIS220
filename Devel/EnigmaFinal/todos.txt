@@ -1,0 +1,1 @@
+ - make character set checker for a file input

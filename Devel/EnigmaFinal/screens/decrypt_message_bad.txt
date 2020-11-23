@@ -20,5 +20,5 @@ DecryptMessageScreen                                          Date: 10/22/2020
 
 
 
-
+                <<Invalid characters found!  Try again!>>
 Type message or press ENTER for a file >>> 
