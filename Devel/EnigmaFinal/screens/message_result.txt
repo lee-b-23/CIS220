@@ -1,24 +1,24 @@
 12345678901234567890123456789012345678901234567890123456789012345678901234567-90
 Enigma Machine Project                                      Author:  Lee Brown
-EncodedMessageScreen                                          Date: 10/22/2020
+MessageResultScreen                                           Date: 10/22/2020
 
 
                               Enigma Machine
-                          Encoded Message Screen
+                              Message Result
 
 
 
-                       <l1>
-                       <l2>
-                       <l3>
-                       <l4>
-                       <l5>
-                       <l6>
-                       <l7>
-                       <l8>
-                       <l9>
+                  <l1>
+                  <l2>
+                  <l3>
+                  <l4>
+                  <l5>
+                  <l6>
+                  <l7>
+                  <l8>
+                  <l9>
 
 
                           <too_large>
 
-Type file location ('C:\...') to save to and/or press enter to continue >>> 
+Type file location ('C:\...') to save to and/or press ENTER to continue >>> 

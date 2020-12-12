@@ -9,7 +9,7 @@ AboutScreen                                                   Date: 10/22/2020
 
 
 
-    This enigma machine application was created by Lee Brown, an Manchester
+    This enigma machine application was created by Lee Brown, a Manchester
    Community College student.  He completed this application as part of his
     Object-Oriented Programming class during his second year at the college.
 

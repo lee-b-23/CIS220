@@ -2,7 +2,7 @@
 Name:  main.py
 Author:  Lee Brown
 Created:  10/22/2020
-Last Updated:  11/01/2020
+Last Updated:  12/6/2020
 Purpose:  This is the main module for my enigma machine program.
 Description: See purpose.
 Sources:
@@ -10,6 +10,7 @@ Sources:
          Used for os.path.exists()
  - https://www.codementor.io/tips/4043378291/why-does-python-os-path-isfile-return-false-on-windows-for-only-a-specific-directory
  - https://bugs.python.org/issue33105
+ - https://www.geeksforgeeks.org/how-to-print-exception-stack-trace-in-python/
 """
 import os
 import traceback
@@ -38,7 +39,6 @@ def write_to_file(directory, data):
         return False
 
 def main():
-    character_set = []
     enigma = EnigmaMachine.EnigmaMachine()
     screens = screen.ShowScreen('D:\\CIS220\\Devel\\EnigmaFinal\\screens', '.txt')
 
@@ -60,45 +60,34 @@ def main():
         #1:  Encode Message
         if(value == '1'):
             error = 0
-            
-            value2 = screens.show_screen('static', 'encrypt_message')
-            #Search for bad characters loop.
-            if value2 != '':
-                while(True):
-                    bad_char = False
-                    for x in value2:
-                        if x in character_set:
-                            pass
-                        else:
-                            bad_char = True
-                    #if a bad character was or was not found.
-                    if bad_char == False:
-                        break
-                    else:
-                        value2 = screens.show_screen('static', 'encrypt_message_bad')
+            value2 = screens.show_screen('static', 'encrypt_message')   #original menu screen
 
-
-            #do something with value2
-            num = []
-            #file input handling
-            if value2 == '':
-                location = screens.show_screen('static', 'encrypt_message_file')
-                while location != 'e':
-                    try:
-                        data = ftl.read_to_list(location)
-                        data2 = ''
-                        for x in data:
-                            data2 = data2 + x
-                        store = enigma.encode_message(data2)
-                        break
-                    except:
-                        location = screens.show_screen('static', 'encrypt_message_file_error')
-                        if location == 'e':
-                            value2 = ''
-                            pass
-            else:
-                location = ''
-                store = enigma.encode_message(value2)
+            #check for bad characters and encode
+            while(True):
+                try:
+                    #do something with value2
+                    num = []
+                    #file input handling
+                    if value2 == '':
+                        location = screens.show_screen('static', 'encrypt_message_file')
+                        while location != 'e':
+                            try:
+                                data = ftl.read_to_list(location)
+                                value2 = ''
+                                for x in data:
+                                    value2 = value2 + x
+                                break
+                            except:
+                                location = screens.show_screen('static', 'encrypt_message_file_error')
+                                if location == 'e':
+                                    value2 = ''
+                                    pass
+                    location = ''
+                    store = enigma.encode_message(value2)
+                    break
+                except ValueError:
+                    input(traceback.print_exc())
+                    value2 = screens.show_screen('static', 'encrypt_message_bad')
 
             if location != 'e':
                 print_store = store.split('\n')
@@ -110,7 +99,10 @@ def main():
                     print_store.append('Message too large.  Save entire message in a file.')
                 else:
                     print_store.append('')
-
+                for x in range(len(num), 10):
+                    num.append('<l' + str(x) + '>')
+                    print_store.append('')
+                    
                 #FILE WRITING SECTION
                 value3 = screens.show_screen('static', 'message_result', num, print_store)
                 while value3 != 'e' and value3 != '':
@@ -134,40 +126,30 @@ def main():
             error = 0
             value2 = screens.show_screen('static', 'decrypt_message')
 
-            #Search for bad characters loop.
-            if value != '':
-                while(True):
-                    bad_char = False
-                    for x in value2:
-                        if x in character_set:
-                            pass
-                        else:
-                            bad_char = True
-                    
-                    #if a bad character was or was not found.
-                    if bad_char == False:
-                        break
-                    else:
-                        value2 = screens.show_screen('static', 'decrypt_message_bad')
-
-            #file input handling
-            if value2 == '':
-                location = screens.show_screen('static', 'decrypt_message_file')
-                while location != 'e':
-                    try:
-                        data = ftl.read_to_list(location)
-                        data2 = ''
-                        for x in data:
-                            data2 = data2 + x
-                        store = enigma.decode_message(data2)
-                        break
-                    except:
-                        location = screens.show_screen('static', 'decrypt_message_file_error')
-                        if location == 'e':
-                            value2 = ''
-            else:
-                location = ''
-                store = enigma.decode_message(value2)
+            #check for bad characters and decode
+            while(True):
+                try:
+                    #file input handling
+                    if value2 == '':
+                        location = screens.show_screen('static', 'decrypt_message_file')
+                        while location != 'e':
+                            try:
+                                data = ftl.read_to_list(location)
+                                value2 = ''
+                                for x in data:
+                                    value2 = value2 + x
+                                break
+                            except:
+                                location = screens.show_screen('static', 'decrypt_message_file_error')
+                                if location == 'e':
+                                    value2 = ''
+                    location = ''
+                    store = enigma.decode_message(value2)
+                    break
+                except ValueError:
+                    input(traceback.print_exc())
+                    value2 = screens.show_screen('static', 'decrypt_message_bad')
+            
 
             if location != 'e':
                 #do something with message
@@ -179,6 +161,9 @@ def main():
                 if len(num) > 9:
                     print_store.append('Message too large.  Save entire message in a file.')
                 else:
+                    print_store.append('')
+                for x in range(len(num), 10):
+                    num.append('<l' + str(x) + '>')
                     print_store.append('')
                 #Show user the result and give option to save to a file.
                 value3 = screens.show_screen('static', 'message_result', num, print_store)
