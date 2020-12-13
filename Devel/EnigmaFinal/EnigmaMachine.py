@@ -2,7 +2,7 @@
 Name:  EnigmaMachine.py
 Author:  Lee Brown
 Created:  10/31/2020
-Last Updated:  12/06/2020
+Last Updated:  12/12/2020
 Purpose:  This is going to be the base file for my entire enigma machine.
 Description:  At the very least, this file will contain the interface through
             which the client creates and interacts with an enigma machine
@@ -69,8 +69,7 @@ class enigma_machine_class:
     class gear_box:
         class gear:
             def __init__(self):
-                self.__gear__ = []
-                self.__outbound__ = []
+               self.__gear__ = []
             def rotate(self, direction):
                 temp = []
                 if direction == 'forward':
@@ -105,10 +104,6 @@ class enigma_machine_class:
             self.__gear4__ = self.gear()
             self.__gear4__.set_gear(['e', 'P', 'T', '1', 'n', 'f', 'J', '„', 'G', 't', 'O', 'l', 'a', '5', 'D', 'K', '(', 'r', 'z', 'B', 'b', '6', 'd', '&', 'w', 'L', 'Z', 'x', 'm', 'H', 'N', 'j', '2', '"', 'V', 'c', '7', 'F', 'u', '0', 'E', 'k', '.', 'p', 'g', 'o', 'X', 'M', 'Q', '3', 'A', '4', 'I', 's', 'h', '!', 'i', 'y', ')', '?', 'v', 'U', 'R', '‚', 'q', 'Y', '8', 'W', 'C', '9', 'S', '<'])
 
-            self.og1 = self.__gear1__
-            self.og2 = self.__gear2__
-            self.og3 = self.__gear3__
-            self.og4 = self.__gear4__
         def reset_gears(self):
             self.__gear1__.set_gear(['M', '6', 'G', 'X', 'H', 'L', 'p', '<', 'd', '‚', 'E', '5', 'Q', 'f', 'g', 'Y', '4', 'O', '.', 'A', 'K', 'r', '?', 'S', '9', 'i', 'b', 'n', 'D', 'z', '(', '7', 'B', 'v', 'x', '!', 'N', ')', 'T', 'a', 'R', 'h', 'V', 'u', 'y', 'Z', '2', '1', 'F', 'j', 'm', 'P', 's', '&', 'l', 'q', 't', 'W', 'k', 'J', '"', 'e', 'I', 'c', 'U', 'o', '8', '„', 'C', '3', '0', 'w'])
             self.__gear2__.set_gear(['!', 'W', 'p', ')', 'g', 's', '1', 'l', 'S', 'G', '4', 'n', 'b', 'o', '2', '3', 'X', 'P', 'a', 'O', 'u', 'U', 'C', 'Q', 'x', 'm', '7', '"', '(', '9', '‚', 'v', 'F', 'z', '&', '6', '8', 'V', 'R', 'h', 'i', 'Y', 'J', 'H', 'c', 'L', '0', 'q', 'f', 'd', 'y', 'j', 'I', 'Z', '.', 'B', 'w', 'M', 'e', 'K', 'D', 'A', 't', 'r', 'E', '?', '<', '5', '„', 'k', 'N', 'T'])
@@ -139,7 +134,7 @@ class enigma_machine_class:
                     self.__gear1__.rotate('forward')
                     rotations += 1
                 else:
-                    input("HERE")
+                    pass
             self.__gear1__.rotate('backwards')
             rotations -= 1                                            #this makes it so that the rotations are at 0
             for x in range(len(message) - 1, -1, -1):
@@ -156,6 +151,9 @@ class enigma_machine_class:
             new_message = new_message[::-1]
             return new_message
             #no need for a gear reset because they should be all back to where they started.
+
+
+    
     def __init__(self):
         #create gear and plugboard objects here
         #create variables for input and output
@@ -181,7 +179,7 @@ class enigma_machine_class:
                 else:
                     count += 1
                 new_message = new_message + x
-            return(new_message)
+            return new_message
         
         #If they choose to decode the message.
         elif mode == 'd':
@@ -206,6 +204,9 @@ class enigma_machine_class:
         new_message = self.__gear_box__.encrypt(message)
         new_message = self.format_message('e', new_message)
         return new_message
+
+
+
     def decode_message(self, message):
         #deformat,
         #check for bad characters,

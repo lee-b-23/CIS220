@@ -2,7 +2,7 @@
 Name:  ShowScreen.py
 Author:  Lee Brown
 Created:  10/22/2020
-Last Updated:  11/20/2020
+Last Updated:  12/12/2020
 Purpose:  Shows a given screen for my Enigma Machine.
 Description:  This program will display a screen from a text document in a
               command window.  It will need to clear that window first, and it
@@ -89,12 +89,3 @@ class ShowScreen:
         else:
             #raise "Incorrect screen type specified."
             pass
-
-'''value = ShowScreen('D:\\CIS220\\Devel\\EnigmaFinal\\screens', '.txt')
-value.show_screen('animated', '','loading')'''
-
-
-'''screen = AnimatedScreen('D:\\CIS220\\Devel\\EnigmaFinal\\screens', '.txt')
-screen.show_screen('loading')
-screen2 = StaticInputScreen('D:\\CIS220\\Devel\\EnigmaFinal\\screens', '.txt')
-screen2.show_screen('main_menu')'''

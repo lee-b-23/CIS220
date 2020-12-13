@@ -2,7 +2,7 @@
 Name:  main.py
 Author:  Lee Brown
 Created:  10/22/2020
-Last Updated:  12/6/2020
+Last Updated:  12/12/2020
 Purpose:  This is the main module for my enigma machine program.
 Description: See purpose.
 Sources:
@@ -16,7 +16,6 @@ import os
 import traceback
 import sys
 from datetime import date
-import traceback
 import EnigmaMachine
 import ShowScreen as screen
 import FileToList as ftl
@@ -86,7 +85,6 @@ def main():
                     store = enigma.encode_message(value2)
                     break
                 except ValueError:
-                    input(traceback.print_exc())
                     value2 = screens.show_screen('static', 'encrypt_message_bad')
 
             if location != 'e':
@@ -147,7 +145,6 @@ def main():
                     store = enigma.decode_message(value2)
                     break
                 except ValueError:
-                    input(traceback.print_exc())
                     value2 = screens.show_screen('static', 'decrypt_message_bad')
             
 

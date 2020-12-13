@@ -16,7 +16,7 @@ EncryptMessageBadInputScreen                                  Date: 10/22/2020
 
 
 
-
+       NOTE:  Characters ouside of the character set will be removed.
 
 
 

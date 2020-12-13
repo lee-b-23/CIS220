@@ -16,7 +16,7 @@ DecryptMessageFileErrorScreen                                 Date: 10/22/2020
                                   /__.__\
              Make sure that the message is properly formatted!
 
-
+       NOTE:  Characters ouside of the character set will be removed.
 
 
 

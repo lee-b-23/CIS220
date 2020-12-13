@@ -1,8 +1,0 @@
-Week 11:
- - rewrote the screen showing portions of code so that they use my new interface that I created a few weeks ago instead of the underlying classes
- - fixed an error where entering an incorrect file location to encrypt from produced an error;  had to restructure some parts
- - Updated encrypt_file_message_error.txt, encrypt_message_bad.txt to add option for pressing e to exit
- - Added a file screen for my message decryption part of the machine.  Also added an error screent to accompany it.
- - NOTE:  The user cannot press e to exit from the initial encryption or decryption menu becuase they might want to encode the letter 'e.'
- - tested the 'e' to exit feature on multiple screens
- - Added functionality to test for invalid characters (not from machine's character set)
